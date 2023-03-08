@@ -1,7 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .hero {
-  background: rgba(0, 0, 0, 0.5) url(Hero.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("./HeroR.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: darken;
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
 }
