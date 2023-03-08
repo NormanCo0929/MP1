@@ -10,5 +10,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
+  background-blend-mode: darken;
+  color: white;
 }
