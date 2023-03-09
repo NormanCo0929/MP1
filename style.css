@@ -80,7 +80,7 @@ body {
     text-align: center;
   }
   .carousel-caption {
-    bottom: 100px;
+    bottom: 20px;
   }
   .carousel-caption h5 {
     font-size: 25px;
@@ -94,6 +94,6 @@ body {
     font-size: 15px;
   }
   .carousel-item {
-    height: 180px;
+    height: 210px;
   }
 }
