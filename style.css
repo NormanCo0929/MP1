@@ -55,6 +55,9 @@ body {
 }
 
 @media only screen and (max-width: 370px) {
+  .navbar {
+    position: inherit;
+  }
   .navbar-nav {
     text-align: center;
   }
@@ -73,7 +76,7 @@ body {
     font-size: 15px;
   }
   .carousel-item {
-    height: 210px;
+    max-height: 210px;
   }
 }
 @media only screen and (min-width: 371px) and (max-width: 424px) {
@@ -98,6 +101,7 @@ body {
     font-size: 15px;
   }
   .carousel-item {
-    height: 240px;
+    min-height: 210px;
+    max-height: 240px;
   }
 }
