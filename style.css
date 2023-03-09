@@ -28,8 +28,7 @@ body {
 }
 /*=====carousel=====*/
 .carousel-item {
-  height: 100vh;
-  min-height: 300px;
+  min-height: 180px;
 }
 .carousel-caption {
   bottom: 280px;
@@ -53,11 +52,8 @@ body {
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.w-100 {
-  height: 100vh;
-}
 
-@media only screen and (max-width: 308px) {
+@media only screen and (max-width: 319px) {
   .navbar-nav {
     text-align: center;
   }
@@ -75,7 +71,7 @@ body {
     line-height: 1.6;
     font-size: 15px;
   }
-  .w-100 {
+  .carousel-item {
     height: 180px;
   }
 }
