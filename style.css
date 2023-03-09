@@ -29,7 +29,7 @@ body {
 }
 /*=====carousel=====*/
 .carousel-item {
-  min-height: 180px;
+  min-height: 170px;
 }
 .carousel-caption {
   bottom: 280px;
@@ -42,7 +42,6 @@ body {
   margin-top: 25px;
   font-weight: bold;
 }
-
 .carousel-inner::before {
   content: "";
   position: absolute;
@@ -54,7 +53,7 @@ body {
   z-index: 1;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 371px) {
   .navbar {
     position: inherit;
   }
@@ -62,13 +61,13 @@ body {
     text-align: center;
   }
   .carousel-caption {
-    bottom: 100px;
+    bottom: 15px;
   }
   .carousel-caption h5 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .carousel-caption a {
-    padding: 10px 15px;
+    padding: 4px 8px;
   }
   .carousel-caption p {
     width: 100%;
@@ -79,7 +78,7 @@ body {
     max-height: 210px;
   }
 }
-@media only screen and (min-width: 371px) and (max-width: 424px) {
+@media only screen and (min-width: 371px) and (max-width: 425px) {
   .navbar {
     position: inherit;
   }
@@ -90,10 +89,10 @@ body {
     bottom: 20px;
   }
   .carousel-caption h5 {
-    font-size: 25px;
+    font-size: 21px;
   }
   .carousel-caption a {
-    padding: 10px 15px;
+    padding: 5px 10px;
   }
   .carousel-caption p {
     width: 100%;
@@ -103,5 +102,31 @@ body {
   .carousel-item {
     min-height: 210px;
     max-height: 240px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .navbar {
+    position: inherit;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 40px;
+  }
+  .carousel-caption h5 {
+    font-size: 30px;
+  }
+  .carousel-caption a {
+    padding: 8px 16px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .carousel-item {
+    min-height: 240px;
+    max-height: 405px;
   }
 }
