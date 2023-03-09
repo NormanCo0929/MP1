@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  box-sizing: inherit;
 }
 body {
   background: fff8f0;
