@@ -70,8 +70,4 @@ body {
   .carousel-caption a {
     padding: 10px 15px;
   }
-  .carousel-item {
-    height: 50vh;
-    min-height: 150px;
-  }
 }
