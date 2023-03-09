@@ -54,7 +54,7 @@ body {
   z-index: 1;
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 370px) {
   .navbar-nav {
     text-align: center;
   }
@@ -76,7 +76,10 @@ body {
     height: 210px;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 424px) {
+@media only screen and (min-width: 371px) and (max-width: 424px) {
+  .navbar {
+    position: inherit;
+  }
   .navbar-nav {
     text-align: center;
   }
