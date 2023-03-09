@@ -57,7 +57,7 @@ body {
   height: 100vh;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 308px) {
   .navbar-nav {
     text-align: center;
   }
