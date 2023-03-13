@@ -80,7 +80,7 @@ body {
   .carousel-caption a {
     padding: 4px 8px;
   }
-  .services-icon img {
+  .why-icon img {
     max-height: 25px;
     max-width: 25px;
     }
@@ -103,7 +103,7 @@ body {
   .carousel-caption a {
     padding: 4px 8px;
   }
-  .services-icon img {
+  .why-icon img {
     max-height: 25px;
     max-width: 25px;
     }
@@ -126,7 +126,7 @@ body {
   .carousel-caption a {
     padding: 4px 8px;
   }
-  .services-icon img {
+  .why-icon img {
     max-height: 25px;
     max-width: 25px;
   }
@@ -149,7 +149,7 @@ body {
   .carousel-caption a {
     padding: 8px 16px;
   }
-  .services-icon img {
+  .why-icon img {
     max-height: 30px;
     max-width: 30px;
   }
@@ -172,7 +172,7 @@ body {
   .carousel-caption a {
     padding: 10px 20px;
   }
-  .services-icon img {
+  .why-icon img {
     max-height: 40px;
     max-width: 40px;
   }
@@ -195,7 +195,7 @@ body {
   .carousel-caption a {
     padding: 12px 24px;
   }
-  .services-icon img {
+  .why-icon img {
     max-height: 60px;
     max-width: 60px;
   }
@@ -217,20 +217,20 @@ body {
   .carousel-caption a {
     padding: 14px 28px;
   }
-  .services-icon img {
+  .why-icon img {
     max-height: 60px;
     max-width: 60px;
   }
 }
 /*==================================================Responsive==================================================*/
 /*=====Services section=====*/
-.services {
+.why {
   padding-top: 40px;
 }
-.services h1 {
+.why h1 {
   text-align: center;
 }
-.services-text h3 {
+.why-text h3 {
   display: flex;
   justify-content: center;
   height: 75px;
