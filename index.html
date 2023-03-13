@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -16,10 +16,10 @@
   <body>
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <nav class="container">
         <a class="navbar-brand" href="index.html"
-          ><span class="text-warning">Lo</span>go</a
+          ><span style="color: #ff9f1c">Lo</span>go</a
         >
         <button
           class="navbar-toggler collapsed"
@@ -35,7 +35,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link active" aria-current="page"
+              <a
+                href="index.html"
+                class="nav-link active nav-active"
+                aria-current="page"
                 >landing</a
               >
             </li>
@@ -59,109 +62,97 @@
             <input
               type="search"
               class="form-control me-2"
-              placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            <button class="btn btn-search" type="submit">Search</button>
           </form>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- Hero -->
-
-    <div id="carouselExampleDark" class="carousel carousel-light slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img
-            src="https://www.summithomes.com.au/media/5161/odeon-2.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132306398600000000&quality=70&format=webp"
-            class="w-100"
-            alt="House 1"
-          />
-          <div class="carousel-caption">
-            <h5>Your dream house</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-            <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+    <section>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.summithomes.com.au/media/5161/odeon-2.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132306398600000000&quality=70&format=webp"
+              class="w-100"
+              alt="House 1">
+            <div class="carousel-caption">
+              <h5>Your dream house</h5>
+              <p><a href="#" class="btn btn-warning">Learn More</a></p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="https://www.summithomes.com.au/media/10585/contemporary.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132839492540000000&quality=70&format=webp"
-            class="w-100"
-            alt="House 2"
-          />
-          <div class="carousel-caption">
-            <h5>Creating reality</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-            <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+          <div class="carousel-item">
+            <img
+              src="https://www.summithomes.com.au/media/10585/contemporary.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132839492540000000&quality=70&format=webp"
+              class="w-100"
+              alt="House 2">
+            <div class="carousel-caption">
+              <h5>Creating Reality</h5>
+              <p><a href="#" class="btn btn-warning">Learn More</a></p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://www.summithomes.com.au/media/10584/industrial.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132839492520000000&quality=70&format=webp"
-            class="w-100"
-            alt="House 3"
-          />
-          <div class="carousel-caption">
-            <h5>Building your vision</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-            <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+          <div class="carousel-item">
+            <img
+              src="https://www.summithomes.com.au/media/10584/industrial.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132839492520000000&quality=70&format=webp"
+              class="w-100"
+              alt="House 3">
+            <div class="carousel-caption">
+              <h5>Building your Vision</h5>
+              <p><a href="#" class="btn btn-warning">Learn More</a></p>
+            </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <section class="hero hero-expand-lg">
-      <div>
-        <div>
-          <h1>Hello</h1>
-          <h3>Welcome</h3>
+    <!-- Why Logo -->
+      <div class="container">
+        <h1>Why Logo</h1>
+        <div class="container row">
+          <ul class="col-lg-4 p-2">
+            <li class="row">
+              <div class="col-2 services-icon">
+                <img src="./icon/philippines.png" alt="Planning Icon">
+              </div>
+              <div class="col-10 services-text">
+                <h3 class="p-2">Locally Owned & Operated</h3>
+                <p>Being family owned & operated means that everything we do, is done locally. We don't outsource any work or supplies overseas, meaning your dream home is built to the highest of standards.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="col-lg-4 p-2">
+            <li class="row">
+              <div class="col-2 services-icon">
+                <img src="./icon/idea.png" alt="Planning Icon">
+              </div>
+              <div class="col-10 services-text">
+                <h3 class="p-2">Innovations in Buildings</h3>
+                <p>We build for the varied, dynamic and diverse needs of our clients. To do this, we are constantly creating agile home designs with a focus on innovative construction methods to suit all block types, budgets and lifestyles.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="col-lg-4 p-2">
+            <div class="row">
+              <div class="col-2 services-icon">
+                <img src="./icon/edit-tools.png" alt="Planning Icon">
+              </div>
+              <div class="col-10 services-text">
+                <h3 class="p-2">Custom Design</h3>
+                <p>The Logo difference comes down to tailoring your building journey specifically for you. Meaning our designers can create a fully custom home design to suit you now and into the future.</p>
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
     </section>
-    <h1>This is Landing</h1>
+
+    <!-- About -->
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

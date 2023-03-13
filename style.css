@@ -1,15 +1,23 @@
 * {
   font-family: sans-serif;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 body {
-  background: fff8f0;
+  margin: 0;
+  padding: 0;
 }
 /*=====navbar=====*/
 .navbar-nav a {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 500;
+}
+.btn-search {
+  background-color: #ff9f1c;
+}
+.nav-active {
+  background-color: #ff9f1c;
+  border-radius: 5px;
 }
 .navbar-dark .navbar-brand {
   color: white;
@@ -23,11 +31,13 @@ body {
   border-radius: 10px;
   padding: 0 10px;
 }
-/*=====no use yet=====*/
-.section-padding {
-  padding: 100px 0;
+.navbar-toggler {
+  border-color: #ff9f1c;
 }
-/*=====carousel=====*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 159, 28, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*===== Hero =====*/
 .carousel-item {
   min-height: 170px;
 }
@@ -52,10 +62,34 @@ body {
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
-@media only screen and (max-width: 371px) {
-  .navbar {
-    position: inherit;
+/*==================================================Responsive==================================================*/
+/*=====Mobile S=====*/
+@media only screen and (max-width: 319.99px) {
+  .carousel-item {
+    max-height: 180px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 10px;
+  }
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+  .carousel-caption a {
+    padding: 4px 8px;
+  }
+  .services-icon img {
+    max-height: 25px;
+    max-width: 25px;
+    }
+}
+/*=====Mobile M=====*/
+@media only screen and (min-width: 320px) and (max-width: 374.99px) {
+  .carousel-item {
+    min-height: 180px;
+    max-height: 210px;
   }
   .navbar-nav {
     text-align: center;
@@ -64,23 +98,21 @@ body {
     bottom: 15px;
   }
   .carousel-caption h5 {
-    font-size: 20px;
+    font-size: 22px;
   }
   .carousel-caption a {
     padding: 4px 8px;
   }
-  .carousel-caption p {
-    width: 100%;
-    line-height: 1.6;
-    font-size: 15px;
-  }
-  .carousel-item {
-    max-height: 210px;
-  }
+  .services-icon img {
+    max-height: 25px;
+    max-width: 25px;
+    }
 }
-@media only screen and (min-width: 371px) and (max-width: 425px) {
-  .navbar {
-    position: inherit;
+/*=====Mobile L=====*/
+@media only screen and (min-width: 375px) and (max-width: 599.99px) {
+  .carousel-item {
+    min-height: 210px;
+    max-height: 240px;
   }
   .navbar-nav {
     text-align: center;
@@ -89,24 +121,21 @@ body {
     bottom: 20px;
   }
   .carousel-caption h5 {
-    font-size: 21px;
+    font-size: 24px;
   }
   .carousel-caption a {
-    padding: 5px 10px;
+    padding: 4px 8px;
   }
-  .carousel-caption p {
-    width: 100%;
-    line-height: 1.6;
-    font-size: 15px;
-  }
-  .carousel-item {
-    min-height: 210px;
-    max-height: 240px;
+  .services-icon img {
+    max-height: 25px;
+    max-width: 25px;
   }
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
-  .navbar {
-    position: inherit;
+/*=====Tablet=====*/
+@media only screen and (min-width: 600px) and (max-width: 767.99px) {
+  .carousel-item {
+    min-height: 240px;
+    max-height: 405px;
   }
   .navbar-nav {
     text-align: center;
@@ -120,13 +149,89 @@ body {
   .carousel-caption a {
     padding: 8px 16px;
   }
-  .carousel-caption p {
-    width: 100%;
-    line-height: 1.6;
-    font-size: 18px;
+  .services-icon img {
+    max-height: 30px;
+    max-width: 30px;
   }
+}
+/*=====Laptop=====*/
+@media only screen and (min-width: 768px) and (max-width: 991.99px) {
   .carousel-item {
-    min-height: 240px;
-    max-height: 405px;
+    min-height: 405px;
+    max-height: 576px;
   }
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 120px;
+  }
+  .carousel-caption h5 {
+    font-size: 50px;
+  }
+  .carousel-caption a {
+    padding: 10px 20px;
+  }
+  .services-icon img {
+    max-height: 40px;
+    max-width: 40px;
+  }
+}
+/*=====Laptop L=====*/
+@media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+  .carousel-item {
+    min-height: 576px;
+    max-height: 810px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 200px;
+  }
+  .carousel-caption h5 {
+    font-size: 80px;
+  }
+  .carousel-caption a {
+    padding: 12px 24px;
+  }
+  .services-icon img {
+    max-height: 60px;
+    max-width: 60px;
+  }
+}
+/*=====4k-2560=====*/
+@media only screen and (min-width: 1200px) {
+  .carousel-item {
+    min-height: 810px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 300px;
+  }
+  .carousel-caption h5 {
+    font-size: 100px;
+  }
+  .carousel-caption a {
+    padding: 14px 28px;
+  }
+  .services-icon img {
+    max-height: 60px;
+    max-width: 60px;
+  }
+}
+/*==================================================Responsive==================================================*/
+/*=====Services section=====*/
+.services {
+  padding-top: 40px;
+}
+.services h1 {
+  text-align: center;
+}
+.services-text h3 {
+  display: flex;
+  justify-content: center;
+  height: 75px;
 }
