@@ -65,7 +65,7 @@
 }
 /*==================================================Responsive==================================================*/
 /*=====Mobile S=====*/
-@media only screen and (max-width: 319.99px) {
+@media only screen and (max-width: 319.95px) {
   .carousel-item, .about-image {
     max-height: 180px;
   }
@@ -87,7 +87,7 @@
     }
 }
 /*=====Mobile M=====*/
-@media only screen and (min-width: 320px) and (max-width: 374.99px) {
+@media only screen and (min-width: 320px) and (max-width: 374.95px) {
   .carousel-item, .about-image {
     min-height: 180px;
     max-height: 210px;
@@ -110,7 +110,7 @@
     }
 }
 /*=====Mobile L=====*/
-@media only screen and (min-width: 375px) and (max-width: 599.99px) {
+@media only screen and (min-width: 375px) and (max-width: 599.95px) {
   .carousel-item, .about-image {
     min-height: 210px;
     max-height: 240px;
@@ -133,7 +133,7 @@
   }
 }
 /*=====Tablet=====*/
-@media only screen and (min-width: 600px) and (max-width: 767.99px) {
+@media only screen and (min-width: 600px) and (max-width: 767.95px) {
   .carousel-item, .about-image {
     min-height: 240px;
     max-height: 405px;
@@ -159,7 +159,7 @@
   }
 }
 /*=====Laptop=====*/
-@media only screen and (min-width: 768px) and (max-width: 991.99px) {
+@media only screen and (min-width: 768px) and (max-width: 991.95px) {
   .carousel-item, .about-image {
     min-height: 405px;
     max-height: 576px;
@@ -182,6 +182,20 @@
   }
   .why-quote {
     padding-bottom: 50px;
+  }
+  /*Contact*/
+  .contact {
+    padding: 50px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container .contact-info {
+    margin-bottom: 40px;
+  }
+  .contact-container .contact-info,
+  .contact-container .contact-form {
+    width: 100%;
   }
 }
 /*=====Laptop L=====*/
@@ -285,9 +299,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(2, 25, 39, 0.5) url(./pictures/AboutC.jpg);
+  background: rgba(2, 25, 39, 0.5) url(./pictures/ContactC.jpg);
   background-size: cover;
   background-blend-mode: darken;
+  color: white;
 }
 .contact .contact-content {
   max-width: 800px;
@@ -295,10 +310,6 @@
 }
 .contact-content h1 {
   font-weight: bold;
-  color: white;
-}
-.contact-content p {
-  color: white;
 }
 .contact-container {
   width: 100%;
