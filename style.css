@@ -84,7 +84,21 @@
   .why-icon img {
     max-height: 25px;
     max-width: 25px;
-    }
+  }
+  /*Contact*/
+  .contact {
+    padding: 50px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container .contact-info {
+    margin-bottom: 40px;
+  }
+  .contact-container .contact-info,
+  .contact-container .contact-form {
+    width: 100%;
+  }
 }
 /*=====Mobile M=====*/
 @media only screen and (min-width: 320px) and (max-width: 374.95px) {
@@ -107,7 +121,21 @@
   .why-icon img {
     max-height: 25px;
     max-width: 25px;
-    }
+  }
+  /*Contact*/
+  .contact {
+    padding: 50px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container .contact-info {
+    margin-bottom: 40px;
+  }
+  .contact-container .contact-info,
+  .contact-container .contact-form {
+    width: 100%;
+  }
 }
 /*=====Mobile L=====*/
 @media only screen and (min-width: 375px) and (max-width: 599.95px) {
@@ -130,6 +158,20 @@
   .why-icon img {
     max-height: 25px;
     max-width: 25px;
+  }
+  /*Contact*/
+  .contact {
+    padding: 50px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container .contact-info {
+    margin-bottom: 40px;
+  }
+  .contact-container .contact-info,
+  .contact-container .contact-form {
+    width: 100%;
   }
 }
 /*=====Tablet=====*/
@@ -156,6 +198,20 @@
   }
   .why-quote {
     padding-bottom: 50px;
+  }
+  /*Contact*/
+  .contact {
+    padding: 50px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container .contact-info {
+    margin-bottom: 40px;
+  }
+  .contact-container .contact-info,
+  .contact-container .contact-form {
+    width: 100%;
   }
 }
 /*=====Laptop=====*/
