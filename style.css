@@ -66,7 +66,7 @@
 /*==================================================Responsive==================================================*/
 /*=====Mobile S=====*/
 @media only screen and (max-width: 319.95px) {
-  .carousel-item, .about-image {
+  .carousel-item {
     max-height: 180px;
   }
   .navbar-nav {
@@ -102,7 +102,7 @@
 }
 /*=====Mobile M=====*/
 @media only screen and (min-width: 320px) and (max-width: 374.95px) {
-  .carousel-item, .about-image {
+  .carousel-item {
     min-height: 180px;
     max-height: 210px;
   }
@@ -139,7 +139,7 @@
 }
 /*=====Mobile L=====*/
 @media only screen and (min-width: 375px) and (max-width: 599.95px) {
-  .carousel-item, .about-image {
+  .carousel-item {
     min-height: 210px;
     max-height: 240px;
   }
@@ -176,7 +176,7 @@
 }
 /*=====Tablet=====*/
 @media only screen and (min-width: 600px) and (max-width: 767.95px) {
-  .carousel-item, .about-image {
+  .carousel-item {
     min-height: 240px;
     max-height: 405px;
   }
@@ -196,9 +196,6 @@
     max-height: 30px;
     max-width: 30px;
   }
-  .why-quote {
-    padding-bottom: 50px;
-  }
   /*Contact*/
   .contact {
     padding: 50px;
@@ -216,7 +213,7 @@
 }
 /*=====Laptop=====*/
 @media only screen and (min-width: 768px) and (max-width: 991.95px) {
-  .carousel-item, .about-image {
+  .carousel-item {
     min-height: 405px;
     max-height: 576px;
   }
@@ -236,9 +233,6 @@
     max-height: 40px;
     max-width: 40px;
   }
-  .why-quote {
-    padding-bottom: 50px;
-  }
   /*Contact*/
   .contact {
     padding: 50px;
@@ -256,7 +250,7 @@
 }
 /*=====Laptop L=====*/
 @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
-  .carousel-item, .about-image {
+  .carousel-item {
     min-height: 576px;
     max-height: 670px;
   }
@@ -276,13 +270,10 @@
     max-height: 60px;
     max-width: 60px;
   }
-  .why-quote {
-    padding-bottom: 50px;
-  }
 }
 /*=====4k-2560=====*/
 @media only screen and (min-width: 1200px) {
-  .carousel-item, .about-image {
+  .carousel-item {
     min-height: 670px;
   }
   .navbar-nav {
@@ -301,24 +292,16 @@
     max-height: 60px;
     max-width: 60px;
   }
-  .why-quote {
-    padding-bottom: 50px;
-  }
 }
 /*==================================================Responsive==================================================*/
 /*=====Why section=====*/
 .why {
   padding: 50px 0;
 }
-.why-quote, .why-quote p {
-  max-width: 600px;
-}
-.why-text h3 {
-  display: flex;
-  justify-content: center;
-}
 /*=====About section=====*/
 .about {
+  padding: 50px 0;
+  color: white;
   position: relative;
   min-height: 100vh;
   padding: 50px 100px;
@@ -329,22 +312,11 @@
   background: rgba(0, 0, 0, 0.5) url(./pictures/AboutC.jpg);
   background-size: cover;
   background-blend-mode: darken;
+  background-position: center center;
 }
-.about .about-content {
-  max-width: 800px;
-  text-align: center;
-}
-.about h1 {
-  font-weight: bold;
-  color: white;
-}
-.about h2 {
-  font-size: 36px;
-  font-weight: 500;
-  color: white;
-}
-.about p {
-  color: white;
+/*=====Service section=====*/
+.services {
+  padding: 50px 0;
 }
 /*=====Contact section=====*/
 .contact {
