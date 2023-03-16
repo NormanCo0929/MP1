@@ -10,12 +10,18 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+.navbar-brand span {
+  color: #ff9f1c;
+}
 .btn-search {
   background-color: #ff9f1c;
 }
+.btn-search:hover {
+  background-color: white;
+}
 .nav-active {
   background-color: #ff9f1c;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .navbar-dark .navbar-brand {
   color: white;
@@ -27,7 +33,6 @@
 .nav-item:hover {
   background-color: black;
   border-radius: 10px;
-  padding: 0 10px;
 }
 .navbar-toggler {
   border-color: #ff9f1c;
@@ -198,7 +203,7 @@
   }
 }
 /*=====Extra Large=====*/
-@media only screen and (min-width: 1200px) and (max-width: 1399.95px)  {
+@media only screen and (min-width: 1200px) and (max-width: 1399.95px) {
   .carousel-item {
     min-height: 670px;
   }
@@ -264,9 +269,21 @@
 }
 
 /*=====Service section=====*/
-.services {
+.service {
   padding: 50px 0;
 }
+.service-one {
+  padding: 15px;
+  width: 100%;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+  transition: 0.5s all ease-in-out;
+  border-radius: 10px;
+}
+.service-one:hover {
+  scale: 1.1;
+}
+
 /*=====Contact section=====*/
 .contact {
   position: relative;
@@ -304,14 +321,16 @@
   display: flex;
 }
 .contact-container .contact-info .contact-box .contact-icon {
-  min-width: 60px;
-  height: 60px;
-  background-color: white;
+  background-color: #ff9f1c;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
 }
 .contact-container .contact-info .contact-box .contact-text {
   display: flex;
