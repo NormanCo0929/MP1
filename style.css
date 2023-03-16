@@ -48,7 +48,8 @@
   bottom: 280px;
   z-index: 2;
 }
-.carousel-caption h5 {
+.carousel-caption h5,
+.about-page-home h1 {
   font-size: 45px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -71,7 +72,8 @@
 /*==================================================Responsive==================================================*/
 /*=====Extra Small=====*/
 @media only screen and (max-width: 575.95px) {
-  .carousel-item {
+  .carousel-item,
+  .about-page-home {
     max-height: 180px;
   }
   .navbar-nav {
@@ -80,7 +82,8 @@
   .carousel-caption {
     bottom: 10px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h5,
+  .about-page-home h1 {
     font-size: 20px;
   }
   .carousel-caption a {
@@ -107,7 +110,8 @@
 }
 /*=====Small=====*/
 @media only screen and (min-width: 576px) and (max-width: 767.95px) {
-  .carousel-item {
+  .carousel-item,
+  .about-page-home {
     min-height: 240px;
     max-height: 405px;
   }
@@ -117,7 +121,8 @@
   .carousel-caption {
     bottom: 40px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h5,
+  .about-page-home h1 {
     font-size: 30px;
   }
   .carousel-caption a {
@@ -144,7 +149,8 @@
 }
 /*=====Medium=====*/
 @media only screen and (min-width: 768px) and (max-width: 991.95px) {
-  .carousel-item {
+  .carousel-item,
+  .about-page-home {
     min-height: 405px;
     max-height: 576px;
   }
@@ -154,7 +160,8 @@
   .carousel-caption {
     bottom: 120px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h5,
+  .about-page-home h1 {
     font-size: 50px;
   }
   .carousel-caption a {
@@ -181,7 +188,8 @@
 }
 /*=====Large=====*/
 @media only screen and (min-width: 992px) and (max-width: 1199.95px) {
-  .carousel-item {
+  .carousel-item,
+  .about-page-home {
     min-height: 576px;
     max-height: 670px;
   }
@@ -191,7 +199,8 @@
   .carousel-caption {
     bottom: 200px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h5,
+  .about-page-home h1 {
     font-size: 80px;
   }
   .carousel-caption a {
@@ -204,7 +213,8 @@
 }
 /*=====Extra Large=====*/
 @media only screen and (min-width: 1200px) and (max-width: 1399.95px) {
-  .carousel-item {
+  .carousel-item,
+  .about-page-home {
     min-height: 670px;
   }
   .navbar-nav {
@@ -213,7 +223,8 @@
   .carousel-caption {
     bottom: 300px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h5,
+  .about-page-home h1 {
     font-size: 100px;
   }
   .carousel-caption a {
@@ -226,7 +237,8 @@
 }
 /*=====Extra Extra Large=====*/
 @media only screen and (min-width: 1400px) {
-  .carousel-item {
+  .carousel-item,
+  .about-page-home {
     min-height: 670px;
   }
   .navbar-nav {
@@ -235,7 +247,8 @@
   .carousel-caption {
     bottom: 300px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h5,
+  .about-page-home h1 {
     font-size: 100px;
   }
   .carousel-caption a {
@@ -253,7 +266,6 @@
 }
 /*=====About section=====*/
 .about {
-  padding: 50px 0;
   color: white;
   position: relative;
   min-height: 80vh;
@@ -277,6 +289,32 @@
 }
 .about-content p {
   max-width: 800px;
+}
+/*=====About page section=====*/
+.about-page {
+  padding: 50px 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.5) url(./pictures/AbouthomeC.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center center;
+}
+.about-page-landing {
+}
+.about-page-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-page-button button {
+  border: 0;
+}
+.about-page-button .btn-hero {
+  text-decoration: none;
+}
+.about-page-button .btn-hero:hover {
+  background-color: white;
+  color: black;
 }
 /*=====Service section=====*/
 .service {
