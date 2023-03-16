@@ -64,8 +64,8 @@
   background-color: #ff9f1c;
 }
 /*==================================================Responsive==================================================*/
-/*=====Mobile S=====*/
-@media only screen and (max-width: 319.95px) {
+/*=====Extra Small=====*/
+@media only screen and (max-width: 575.95px) {
   .carousel-item {
     max-height: 180px;
   }
@@ -94,88 +94,14 @@
   }
   .contact-container .contact-info {
     margin-bottom: 40px;
+    width: 100%;
   }
-  .contact-container .contact-info,
   .contact-container .contact-form {
     width: 100%;
   }
 }
-/*=====Mobile M=====*/
-@media only screen and (min-width: 320px) and (max-width: 374.95px) {
-  .carousel-item {
-    min-height: 180px;
-    max-height: 210px;
-  }
-  .navbar-nav {
-    text-align: center;
-  }
-  .carousel-caption {
-    bottom: 15px;
-  }
-  .carousel-caption h5 {
-    font-size: 22px;
-  }
-  .carousel-caption a {
-    padding: 4px 8px;
-  }
-  .why-icon img {
-    max-height: 25px;
-    max-width: 25px;
-  }
-  /*Contact*/
-  .contact {
-    padding: 50px;
-  }
-  .contact-container {
-    flex-direction: column;
-  }
-  .contact-container .contact-info {
-    margin-bottom: 40px;
-  }
-  .contact-container .contact-info,
-  .contact-container .contact-form {
-    width: 100%;
-  }
-}
-/*=====Mobile L=====*/
-@media only screen and (min-width: 375px) and (max-width: 599.95px) {
-  .carousel-item {
-    min-height: 210px;
-    max-height: 240px;
-  }
-  .navbar-nav {
-    text-align: center;
-  }
-  .carousel-caption {
-    bottom: 20px;
-  }
-  .carousel-caption h5 {
-    font-size: 24px;
-  }
-  .carousel-caption a {
-    padding: 4px 8px;
-  }
-  .why-icon img {
-    max-height: 25px;
-    max-width: 25px;
-  }
-  /*Contact*/
-  .contact {
-    padding: 50px;
-  }
-  .contact-container {
-    flex-direction: column;
-  }
-  .contact-container .contact-info {
-    margin-bottom: 40px;
-  }
-  .contact-container .contact-info,
-  .contact-container .contact-form {
-    width: 100%;
-  }
-}
-/*=====Tablet=====*/
-@media only screen and (min-width: 600px) and (max-width: 767.95px) {
+/*=====Small=====*/
+@media only screen and (min-width: 576px) and (max-width: 767.95px) {
   .carousel-item {
     min-height: 240px;
     max-height: 405px;
@@ -205,13 +131,13 @@
   }
   .contact-container .contact-info {
     margin-bottom: 40px;
+    width: 100%;
   }
-  .contact-container .contact-info,
   .contact-container .contact-form {
     width: 100%;
   }
 }
-/*=====Laptop=====*/
+/*=====Medium=====*/
 @media only screen and (min-width: 768px) and (max-width: 991.95px) {
   .carousel-item {
     min-height: 405px;
@@ -242,14 +168,14 @@
   }
   .contact-container .contact-info {
     margin-bottom: 40px;
+    width: 100%;
   }
-  .contact-container .contact-info,
   .contact-container .contact-form {
     width: 100%;
   }
 }
-/*=====Laptop L=====*/
-@media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+/*=====Large=====*/
+@media only screen and (min-width: 992px) and (max-width: 1199.95px) {
   .carousel-item {
     min-height: 576px;
     max-height: 670px;
@@ -271,8 +197,30 @@
     max-width: 60px;
   }
 }
-/*=====4k-2560=====*/
-@media only screen and (min-width: 1200px) {
+/*=====Extra Large=====*/
+@media only screen and (min-width: 1200px) and (max-width: 1399.95px)  {
+  .carousel-item {
+    min-height: 670px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 300px;
+  }
+  .carousel-caption h5 {
+    font-size: 100px;
+  }
+  .carousel-caption a {
+    padding: 14px 28px;
+  }
+  .why-icon img {
+    max-height: 60px;
+    max-width: 60px;
+  }
+}
+/*=====Extra Extra Large=====*/
+@media only screen and (min-width: 1400px) {
   .carousel-item {
     min-height: 670px;
   }
@@ -314,6 +262,7 @@
   background-blend-mode: darken;
   background-position: center center;
 }
+
 /*=====Service section=====*/
 .services {
   padding: 50px 0;
@@ -347,9 +296,7 @@
   margin-top: 30px;
 }
 .contact-container .contact-info {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 .contact-container .contact-info .contact-box {
   position: relative;
@@ -376,9 +323,10 @@
 }
 .contact-container .contact-info .contact-box .contact-text h3 {
   font-weight: 500;
-  color: #00bcd4
+  color: #ff9f1c;
 }
 .contact-form {
+  border-radius: 10px;
   width: 40%;
   padding: 40px;
   background-color: white;
@@ -418,16 +366,52 @@
 .contact-form .contact-inputbox input:valid ~ span,
 .contact-form .contact-inputbox textarea:focus ~ span,
 .contact-form .contact-inputbox textarea:valid ~ span {
-  color: #e91e63;
+  color: #ff9f1c;
   font-size: 12px;
   transform: translateY(-20px);
 }
 .contact-form .contact-inputbox input[type="submit"] {
   width: 100px;
-  background: #00bcd4;
+  background: #ff9f1c;
   color: white;
   border: none;
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
+}
+/*=====Footer section=====*/
+.footer {
+  padding: 30px 0;
+}
+.footer .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.footer .social-link li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.footer .social-link li a {
+  background-color: #ff9f1c;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.footer p {
+  color: rgb(145, 145, 145);
+  text-align: center;
+  margin-top: 17px;
+}
+.footer p span {
+  color: #ff9f1c;
 }
