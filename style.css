@@ -299,7 +299,8 @@
   background-blend-mode: darken;
   background-position: center center;
 }
-.about-page-landing {
+.about-page-img {
+  padding: 50px;
 }
 .about-page-home {
   display: flex;
