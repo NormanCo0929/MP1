@@ -256,7 +256,7 @@
   padding: 50px 0;
   color: white;
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 50px 100px;
   display: flex;
   justify-content: center;
@@ -267,7 +267,17 @@
   background-blend-mode: darken;
   background-position: center center;
 }
-
+.about-content h2,
+.about-content h1 {
+  color: #ff9f1c;
+}
+.btn-hero:hover {
+  background-color: white;
+  color: black;
+}
+.about-content p {
+  max-width: 800px;
+}
 /*=====Service section=====*/
 .service {
   padding: 50px 0;
@@ -275,13 +285,33 @@
 .service-one {
   padding: 15px;
   width: 100%;
-  height: 400px;
+  height: 450px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
   transition: 0.5s all ease-in-out;
   border-radius: 10px;
+  position: relative;
 }
 .service-one:hover {
   scale: 1.1;
+}
+.service-one .service-button {
+  position: absolute;
+  bottom: 25px;
+}
+.service-button button {
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: white;
+  transition: 0.5s;
+}
+.service-button button:hover {
+  background-color: #ff9f1c;
+  scale: 1.1;
+}
+.service-button button a {
+  text-decoration: none;
+  color: black;
 }
 
 /*=====Contact section=====*/
